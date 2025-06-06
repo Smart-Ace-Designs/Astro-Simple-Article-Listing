@@ -1,9 +1,27 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
-import Image from "astro/components/Image.astro";
-import photo_1_2x from "@/assets/photo_1@2x.png";
-import photo_2_2x from "@/assets/photo_2@2x.png";
-import photo_3_2x from "@/assets/photo_3@2x.png";
+import AppCard from "@/components/AppCard.astro";
+
+const articles = [
+  {
+    title: "Unlocking the Power of Cloud Computing: A Guide to Scalable Solutions",
+    date: "November 12, 2024",
+    imagePath: "/src/assets/photo_1@2x.png",
+    altText: "A comfortable pink bed on on a step pyramid.",
+  },
+  {
+    title: "The Future of AI: How Machine Learning is Revolutionizing Industries",
+    date: "November 12, 2024",
+    imagePath: "/src/assets/photo_2@2x.png",
+    altText: "A glass cube balanced precariously on it's corner.",
+  },
+  {
+    title: "The Impact of 5G on Business: How Faster Networks are Transforming the Way We Work",
+    date: "November 12, 2024",
+    imagePath: "/src/assets/photo_3@2x.png",
+    altText: "A moss covered cluster of glass cubes.",
+  },
+];
 ---
 
 <MainLayout
@@ -16,57 +34,16 @@ import photo_3_2x from "@/assets/photo_3@2x.png";
     </h1>
     <img src="/Seperator.svg" alt="A section separator" class="mx-auto" />
     <div class="flex flex-col gap-4">
-      <div class="flex flex-row gap-8">
-        <Image
-          src={photo_1_2x}
-          alt="A comfortable pink bed on on a step pyramid."
-          format="webp"
-          loading="eager"
-          width={150}
-          height={150}
-          class="rounded-lg"
-        />
-        <div class="flex flex-col justify-center gap-8">
-          <h2 class="text-xl font-semibold">
-            Unlocking the Power of Cloud Computing: A Guide to Scalable Solutions
-          </h2>
-          <p class="text-theme-stormy-ash text-sm font-medium">November 12, 2024</p>
-        </div>
-      </div>
-      <div class="flex flex-row gap-8">
-        <Image
-          src={photo_2_2x}
-          alt="A glass cube balanced precariously on it's corner."
-          format="webp"
-          loading="eager"
-          width={150}
-          height={150}
-          class="rounded-lg"
-        />
-        <div class="flex flex-col justify-center gap-8">
-          <h2 class="text-xl font-semibold">
-            The Future of AI: How Machine Learning is Revolutionizing Industries
-          </h2>
-          <p class="text-theme-stormy-ash text-sm font-medium">November 12, 2024</p>
-        </div>
-      </div>
-      <div class="flex flex-row gap-8">
-        <Image
-          src={photo_3_2x}
-          alt="A moss covered cluster of glass cubes."
-          format="webp"
-          loading="eager"
-          width={150}
-          height={150}
-          class="rounded-lg"
-        />
-        <div class="flex flex-col justify-center gap-8">
-          <h2 class="text-xl font-semibold">
-            The Impact of 5G on Business: How Faster Networks are Transforming the Way We Work
-          </h2>
-          <p class="text-theme-stormy-ash text-sm font-medium">November 12, 2024</p>
-        </div>
-      </div>
+      {
+        articles.map((article) => (
+          <AppCard
+            title={article.title}
+            date={article.date}
+            imagePath={article.imagePath}
+            altText={article.altText}
+          />
+        ))
+      }
     </div>
   </section>
 </MainLayout>
