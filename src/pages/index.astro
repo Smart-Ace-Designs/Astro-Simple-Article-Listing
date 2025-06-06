@@ -1,10 +1,45 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
+import Image from "astro/components/Image.astro";
+import photo_1_2x from "@/assets/photo_1@2x.png";
+import photo_2_2x from "@/assets/photo_2@2x.png";
+import photo_3_2x from "@/assets/photo_3@2x.png";
 ---
 
 <MainLayout
   title="devChallenges | Simple Article Listing"
   description="A devChallenges.io coding challenge."
 >
-  <!-- Begin your journey here... -->
+  <h1>We release interesting articles about technology</h1>
+  <img src="/Seperator.svg" alt="A separator" />
+  <Image
+    src={photo_1_2x}
+    alt="A comfortable bed on on a pyramid."
+    format="webp"
+    loading="eager"
+    width={150}
+    height={150}
+  />
+  <h2>Unlocking the Power of Cloud Computing: A Guide to Scalable Solutions</h2>
+  <p>November 12, 2024</p>
+  <Image
+    src={photo_2_2x}
+    alt="A glass cube balanced on it's corner."
+    format="webp"
+    loading="eager"
+    width={150}
+    height={150}
+  />
+  <h2>The Future of AI: How Machine Learning is Revolutionizing Industries</h2>
+  <p>November 12, 2024</p>
+  <Image
+    src={photo_3_2x}
+    alt="A moss covered cluster of glass cubes."
+    format="webp"
+    loading="eager"
+    width={150}
+    height={150}
+  />
+  <h2>The Impact of 5G on Business: How Faster Networks are Transforming the Way We Work</h2>
+  <p>November 12, 2024</p>
 </MainLayout>
