@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name} | devChallenges</h1>
+<h1 align="center"Simple Article Listing built with Astor and Tailwind | devChallenges</h1>
 
 <div align="center">
    Solution for a challenge <a href="https://devchallenges.io/challenge/simple-article-listing" target="_blank">Simple Article Listing</a> from <a href="http://devchallenges.io" target="_blank">devChallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="{https://your-demo-link.your-domain}">
+    <a href="https://smartacedesigns-astro-sal.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="{https://your-url-to-the-solution}">
+    <a href="https://github.com/Smart-Ace-Designs/Astro-Simple-Article-Listing">
       Solution
     </a>
     <span> | </span>
@@ -27,12 +27,12 @@
 ## Table of Contents
 
 - [Overview](#overview)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
+  <!-- - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources) -->
 - [Built with](#built-with)
 - [Features](#features)
-- [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
+- [Contact](#author)
+<!-- - [Acknowledgements](#acknowledgements) -->
 
 <!-- OVERVIEW -->
 
@@ -47,11 +47,11 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 - Your wisdom? :)
 -->
 
-### What I learned
+<!-- ### What I learned -->
 
 <!-- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge. -->
 
-### Useful resources
+<!-- ### Useful resources -->
 
 <!--
 - [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
@@ -63,24 +63,24 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
+- [Astro](https://astro.build/)
 - [Tailwind](https://tailwindcss.com/)
+- Astro [Space](https://github.com/Smart-Ace-Designs/Astro-Space) Template
 
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges-dashboard) challenge.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges-dashboard) challenge. It utilizes:
 
-## Acknowledgements
+- Astro component based design
+- Tailwind CSS
+
+<!-- ## Acknowledgements -->
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
 
 ## Author
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
+GitHub: [@smart-ace-designs](https://github.com/Smart-Ace-Designs)
