@@ -28,12 +28,12 @@ const articles = [
   title="devChallenges | Simple Article Listing"
   description="A devChallenges.io coding challenge."
 >
-  <section class="flex min-w-[400px] flex-col gap-4 px-8">
-    <h1 class="text-center text-4xl font-semibold">
+  <section class="flex min-w-[400px] flex-col gap-4 px-8" aria-labelledby="articles-heading">
+    <h1 id="articles-heading" class="text-center text-4xl font-semibold">
       We release interesting articles about technology
     </h1>
-    <img src="/Seperator.svg" alt="A section separator" class="mx-auto" />
-    <div class="flex flex-col gap-4">
+    <img src="/Seperator.svg" alt="A section separator" class="mx-auto" role="presentation" />
+    <div class="flex flex-col gap-4" role="list" aria-label="Technology articles">
       {
         articles.map((article) => (
           <AppCard
