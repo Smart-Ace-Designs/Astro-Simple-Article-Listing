@@ -30,12 +30,15 @@ const articles = [
 >
   <section class="mt-12 flex max-w-[810px] flex-col gap-4 px-8" aria-labelledby="articles-heading">
     <div class="flex flex-col gap-10 xl:px-20">
-      <h1 id="articles-heading" class="text-center text-4xl leading-13 font-semibold">
+      <h1
+        id="articles-heading"
+        class="text-2_5xl text-center leading-12 font-semibold sm:text-4xl sm:leading-13"
+      >
         We release interesting articles about technology
       </h1>
       <img src="/Seperator.svg" alt="A section separator" class="mx-auto" role="presentation" />
     </div>
-    <div class="mt-8 flex flex-col gap-13" role="list" aria-label="Technology articles">
+    <div class="mt-6 flex flex-col gap-13 sm:mt-8" role="list" aria-label="Technology articles">
       {
         articles.map((article) => (
           <AppCard

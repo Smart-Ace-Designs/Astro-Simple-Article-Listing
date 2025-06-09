@@ -6,6 +6,9 @@
   --color-theme-frost: #f8fafc;
 
   --font-sans: "Poppins", "sans-serif";
+
+  --text-xs: 0.813rem;
+  --text-2_5xl: 2.125rem;
 }
 
 @font-face {
