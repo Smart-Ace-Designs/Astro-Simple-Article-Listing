@@ -17,7 +17,7 @@ if (!images[imagePath])
 
 <article class="flex flex-col gap-4 sm:flex-row sm:gap-16">
   <Image
-    src={imagePath}
+    src={images[imagePath]()}
     alt={altText}
     format="webp"
     loading="eager"
