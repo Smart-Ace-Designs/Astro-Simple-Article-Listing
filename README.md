@@ -29,7 +29,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![Screenshot 2025-06-09 143629](https://github.com/user-attachments/assets/7611cc5a-366a-45ae-87bd-f3ce1185b111)
 
 ### Built with
 
