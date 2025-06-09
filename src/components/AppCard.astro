@@ -15,17 +15,17 @@ if (!images[imagePath])
   throw new Error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
 ---
 
-<article class="flex flex-row gap-8">
+<article class="flex flex-row gap-16">
   <Image
     src={imagePath}
     alt={altText}
     format="webp"
     loading="eager"
-    width={150}
-    height={150}
-    class="rounded-lg"
+    width={160}
+    height={160}
+    class="rounded-xl"
   />
-  <div class="flex flex-col justify-center gap-8">
+  <div class="flex flex-col justify-center gap-4">
     <h2 class="text-xl font-semibold" id={`article-title-${title}`}>
       {title}
     </h2>
