@@ -7,35 +7,40 @@ interface Props {
   date: string;
   imagePath: string;
   altText: string;
+  link: string;
 }
 
-const { title, date, imagePath, altText } = Astro.props;
+const { title, date, imagePath, altText, link } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>("/src/assets/*.{jpeg,jpg,png,gif}");
 if (!images[imagePath])
   throw new Error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
 ---
 
-<article
-  class="hover:bg-theme-gainsboro/25 group flex flex-col gap-4 hover:cursor-pointer hover:rounded-xl hover:shadow-lg sm:flex-row sm:gap-16"
->
-  <Image
-    src={images[imagePath]()}
-    alt={altText}
-    format="webp"
-    loading="eager"
-    width={160}
-    height={160}
-    class="size-[140px] rounded-xl group-hover:rounded-r-none sm:size-[160px]"
-  />
-  <div class="flex flex-col justify-center gap-4">
-    <h2 class="text-lg font-semibold sm:text-xl" id={`article-title-${title}`}>
-      {title}
-    </h2>
-    <p
-      class="text-theme-stormy-ash text-xs font-medium sm:text-sm"
-      aria-label={`Published on ${date}`}
-    >
-      {date}
-    </p>
-  </div>
-</article>
+<a href={link} aria-label={`Read more about ${title}`}>
+  <article
+    class="hover:bg-theme-gainsboro/25 group flex flex-col gap-4 hover:cursor-pointer hover:rounded-xl hover:shadow-lg sm:flex-row sm:gap-16"
+    role="article"
+    aria-labelledby={`article-title-${title}`}
+  >
+    <Image
+      src={images[imagePath]()}
+      alt={altText}
+      format="webp"
+      loading="eager"
+      width={160}
+      height={160}
+      class="size-[140px] rounded-xl group-hover:rounded-xl sm:size-[160px] sm:group-hover:rounded-r-none"
+    />
+    <div class="flex flex-col justify-center gap-4">
+      <h2 class="text-lg font-semibold sm:text-xl" id={`article-title-${title}`}>
+        {title}
+      </h2>
+      <p
+        class="text-theme-stormy-ash text-xs font-medium sm:text-sm"
+        aria-label={`Published on ${date}`}
+      >
+        {date}
+      </p>
+    </div>
+  </article>
+</a>

@@ -8,18 +8,21 @@ const articles = [
     date: "November 12, 2024",
     imagePath: "/src/assets/photo_1@2x.png",
     altText: "A comfortable pink bed on a step pyramid.",
+    link: "/",
   },
   {
     title: "The Future of AI: How Machine Learning is Revolutionizing Industries",
     date: "November 12, 2024",
     imagePath: "/src/assets/photo_3@2x.png",
     altText: "A glass cube balanced precariously on it's corner.",
+    link: "/",
   },
   {
     title: "The Impact of 5G on Business: How Faster Networks are Transforming the Way We Work",
     date: "November 12, 2024",
     imagePath: "/src/assets/photo_2@2x.png",
     altText: "A moss covered cluster of glass cubes.",
+    link: "/",
   },
 ];
 ---
@@ -46,6 +49,7 @@ const articles = [
             date={article.date}
             imagePath={article.imagePath}
             altText={article.altText}
+            link={article.link}
           />
         ))
       }
