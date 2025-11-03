@@ -18,7 +18,7 @@ if (!images[imagePath])
 
 <a href={link} aria-label={`Read more about ${title}`}>
   <article
-    class="hover:bg-theme-gainsboro/25 group flex flex-col gap-4 hover:cursor-pointer hover:rounded-xl hover:shadow-lg sm:flex-row sm:gap-16"
+    class="group flex flex-col gap-4 hover:cursor-pointer hover:rounded-xl hover:bg-theme-gainsboro/25 hover:shadow-lg sm:flex-row sm:gap-16"
     role="article"
     aria-labelledby={`article-title-${title}`}
   >
@@ -36,7 +36,7 @@ if (!images[imagePath])
         {title}
       </h2>
       <p
-        class="text-theme-stormy-ash text-xs font-medium sm:text-sm"
+        class="text-xs font-medium text-theme-stormy-ash sm:text-sm"
         aria-label={`Published on ${date}`}
       >
         {date}
