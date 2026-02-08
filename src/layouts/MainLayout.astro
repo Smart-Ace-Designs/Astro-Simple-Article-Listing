@@ -22,8 +22,6 @@ const { title = "Astro", description = "An Astro website." } = Astro.props;
     <ClientRouter />
   </head>
   <body class="bg-theme-frost font-poppins text-theme-deep-black">
-    <main class="flex min-h-screen justify-center">
-      <slot />
-    </main>
+    <slot />
   </body>
 </html>
